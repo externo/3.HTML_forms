@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 4.	Fakebook Register Form</title>
+    <meta charset="utf-8" />
+    <style>
+        th{
+            font-size: 150px;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+        h2{
+            text-align: center;
+            color: white;
+        }
+        table {
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+        body {
+            background: #3B5997;
+        }
+        legend{
+            text-align: center
+        }
+        fieldset {
+            color: white;
+            border: 1px solid #999;
+            border-radius: 8px;
+            height: 215px;
+        }
+        .middle-input {
+            color: grey;
+            text-align: left;
+            border-radius: 5px;
+            width: 150px;
+            height: 20px;
+            margin: 4px;
+        }
+        .little-input {
+            color: grey;
+            text-align: left;
+            border-radius: 5px;
+            width: 80px;
+            height: 20px;
+            margin: 4px;
+        }
+        .multi {
+            border-radius: 8px;
+            width: 485px;
+            height: 50px;
+        }
+        select {
+            width: 156px;
+            color: grey;
+            text-align: left;
+            border-radius: 5px;
+            height: 20px;
+            margin: 4px;
+        }
+        label {
+            display: inline-block;
+            font-size: 13px;
+        }
+        .birth {
+            color: grey;
+            text-align: left;
+            border-radius: 5px;
+            width: 220px;
+        }
+        button {
+            height: 50px;
+            width: 100%;
+            font-size: 18px;
+            color: #3B5997;
+            border: 1px solid #999;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>    
+    <table>
+        <tr><th colspan="2">fakebook</th></tr>
+        <tr>
+            <td colspan="2">
+                <h1>Registration</h1>
+                <h2>It is safe and it always be!</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="fields">
+                <form>
+                    <fieldset>
+                        <legend>None-Important Information</legend>
+
+                        <input type="text" class="middle-input" value="First Name" />
+                        <input type="text" class="middle-input" value="Last name" /><br />
+                        <input type="text" class="middle-input" value="Your Email" />
+                        <input type="text" class="middle-input" value="Phone Number" /><br />
+                        <input type="text" class="middle-input" value="Your Password" />
+                        <input type="text" class="middle-input" value="Website" /><br />
+                        <label for="birth">Birthday</label><br />
+                        <input class="birth" name="birth" type="datetime-local" value="2014-09-05T01:58:00" /><br />
+                        <input type="radio" name="gender" /> Female
+                        <input type="radio" name="gender" /> Male
+                        <input type="radio" name="gender" checked="checked" /> Other<br />
+
+                    </fieldset>
+                    <br />
+                    <button>Clear Form</button>
+                </form>
+            </td>
+
+            <td class="fields">
+                <form>
+                    <fieldset>
+                        <legend>Important Information *required</legend>
+                        <select>
+                            <option>Country</option>
+                            <option>Bulgaria</option>
+                            <option>Poland</option>
+                            <option>Brasil</option>
+                        </select>
+                        <input type="text" class="middle-input" value="Village" />
+                        <input type="text" class="middle-input" value="District" /><br />
+                        <input type="text" class="middle-input" value="Street" />
+                        <input type="text" class="little-input" value="Nr" />
+                        <input type="text" class="little-input" value="Floor" />
+                        <input type="text" class="little-input" value="Ap Nr" /><br />
+                        <label for="color">Door Color</label><br />
+                        <input name="color" type="color" class="middle-input" value="#ff00ff" />
+                        <input type="text" class="middle-input" value="Water Meter Nr" />
+                        <input type="text" class="middle-input" value="Aunt Panties' Size'" /><br />
+                        <label>More Personal Information</label><br />
+                        <input type="text" class="multi" />
+                    </fieldset>
+                    <br />
+                    <button>Register</button>
+                </form>
+            </td>
+        </tr>
+    </table>    
+</body>
+</html>

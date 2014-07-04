@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Problem 5.	Laptop Choice</title>
+    <meta charset="utf-8" />
+    <style>
+        table {
+            color: #41556A;
+            border: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+        button {
+            background: #F0FAFF;
+        }
+        .range {
+            background: #F0FAFF;
+        }
+        .left{
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        em {
+            padding: 10px;
+            font-size: 16px;
+            background: #41556A;
+            color: white;
+            border: 1px solid #999;
+            border-top-left-radius: 10px;
+            float: right;
+            border-spacing: 0;
+        }
+        .range, input[type='range'] {
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>    
+    <table>
+        <tr>
+            <td colspan="3"><h1>Apple's Laptops (6)</h1></td>
+            <td class="range" rowspan="3">
+                Price<br />
+                <a class="left">1700</a> <a class="right">2600</a><br />
+                <input type="range" min="0" max="100" /><br /><br />
+
+                Ram<br />
+                <a class="left">2048</a> <a class="right">4096</a><br />
+                <input type="range" min="0" max="100" /><br /><br />
+
+                Disc<br />
+                <a class="left">100GB</a> <a class="right">2000GB</a><br />
+                <input type="range" min="0" max="100" /><br /><br />
+
+                Display<br />
+                <a class="left">11.6</a> <a class="right">18.4</a><br />
+                <input type="range" min="11.6" max="18.4" value="14" /><br /><br />
+
+                Weight<br />
+                <a class="left">1</a> <a class="right">6</a><br />
+                <input type="range" min="1" max="6" value="4" /><br /><br />
+
+                Warranty<br />
+                <a class="left">12 month</a> <a class="right">60 month</a><br />
+                <input type="range" min="0" max="100" /><br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button>
+                    <b>Apple MacBook Air</b><br />
+                    11.6 inch/1.3GHz<br />
+                    Haswell<br />
+                    <img src="pc11.jpg" width="160" height="120" alt=""><br />
+                    <em>$1,729.00</em>
+                </button>
+            </td>
+            <td>
+                <button>
+                    <b>Apple MacBook Air</b><br />
+                    11.6 inch/1.4GHz<br />
+                    Haswell<br />
+                    <img src="pc11.jpg" width="160" height="120" alt=""><br />
+                    <em>$1,825.00</em>
+                </button>
+            </td>
+            <td>
+                <button>
+                    <b>Apple MacBook Air</b><br />
+                    13.3 inch/1.3GHz<br />
+                    Haswell<br />
+                    <img src="pc11.jpg" width="160" height="120" alt=""><br />
+                    <em>$1,919.00</em>
+                    </button>
+</td>            
+        </tr>
+        <tr>
+            <td>
+                <button>
+                    <b>Apple MacBook Air</b><br />
+                    13.3 inch/1.4GHz<br />
+                    Haswell<br />
+                    <img src="pc11.jpg" width="160" height="120" alt=""><br />
+                    <em>$1,999.00</em>
+                    </button>
+            </td>
+            <td>
+                <button>
+                    <b>Apple MacBook Air</b><br />
+                    11.6 inch/1.4GHz<br />
+                    Haswell 256GB SSD<br />
+                    <img src="pc11.jpg" width="160" height="120" alt=""><br />
+                    <em>$2,199.00</em>
+                </button>
+            </td>
+            <td>
+                <button>
+                    <b>Apple MacBook Pro</b><br />
+                    11.6 inch/2.5GHz Ivy<br />
+                    Bridge<br />
+                    <img src="pc11.jpg" width="160" height="120" alt=""><br />
+                    <em>$2,529.00</em>
+                </button>
+            </td>
+        </tr>        
+    </table>    
+</body>
+</html>

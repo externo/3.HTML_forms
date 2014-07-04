@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+	    <title>Problem 1.	Simple Form</title>
+        <style>
+            body {
+                background-color: #EEEEEE;
+            }
+
+            #container {
+                max-width: 600px;
+                height: auto;
+                background-color: #EEEEEE;
+                font-family: 'Tahoma', sans-serif;
+            }
+
+            h2 {
+                color: #234467;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+            
+            span {
+                color: #234467;
+            }
+
+            #reqiremetns {
+                color: #8D8D8D;
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+
+            #new-user {
+                width: 280px;
+                height: 250px;
+                float: left;
+                padding-left: 20px;
+                background-color: #EEEEEE;
+                color: grey;
+            }
+
+            #registered-user {
+                width: 280px;
+                height: 235px;
+                float: left;
+                padding-left: 20px;
+                background-color: #234467;
+                color: white;
+            }
+
+            form input {
+                margin-bottom: 10px;
+                width: 90%;
+                height: 20px;
+            }
+
+            #register-button {
+                width: 40%;
+                float: right;
+                margin-right: 25px;
+                height: 30px;
+                border: 2px solid #234467;
+                color: #234467;
+                background-color: #EEEEEE;
+            }
+
+            #login-button {
+                width: 30%;
+                margin-right: 25px;
+                height: 30px;
+                border: 2px solid #d08916;
+                color: white;
+                background-color: #234467;
+                float: right;
+            }
+
+            label {
+                vertical-align: top;
+                font-size: 11px;
+            }
+
+            #remember {
+                margin-left: -5px;
+                float: left;
+                width: 10%;
+            }
+
+            a {
+                clear: both;
+                font-size: 11px;
+                text-decoration: underline;
+                color: white;
+                float: right;
+                padding-right: 25px;
+            }
+        </style>
+
+	</head>
+
+	<body>
+
+	  <div id="container">
+
+		  <h2>Enter the system</h2>
+	      <p id="reqiremetns">It is nesessary to login to your account in order to sign up for a course</p>
+
+          <div id="new-user">
+	          <form method="post">
+		          <h5>ARE YOU NEW? <span>REGISTER</span></h5>
+		        <input type="text" name="new-username" placeholder="User name"  autocomplete="on" required>
+		        <input type="email" name="new-user-email" placeholder="Email"  autocomplete="on" required>
+		        <input type="password" name="new-user-password" placeholder="Password" required>
+		        <input type="password" name="confimrr-password" placeholder="Confirm password" required>
+		        <input id="register-button"  type="submit" value="Register" >
+	          </form>		
+          </div>
+          	
+  	      <div id="registered-user">
+	  	      <form method="post">
+		          <h5>ALREADY A STUDENT? LOGIN</h5>
+		          <input type="text" name="registered-username" placeholder="Username" autocomplete="on" required>
+		          <input  type="password" name="registered-user-password" placeholder="Password" required>
+		          <input id="remember" type="checkbox" name="remember-password" value="yes">
+			          <label for="remember"> Remember me?</label>
+                          <input id="login-button" type="submit" value="Login">
+			      <a href="#">Forgot password</a>
+		      </form>
+	      </div>    	
+  	     
+	  </div>
+
+	</body>
+
+</html>
